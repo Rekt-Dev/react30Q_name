@@ -1,15 +1,25 @@
-import "./styles.css";
+import "../src/styles.css"
 import { useState } from "react";
 import Child from "./Child"
+
+
+
 export default function App() {
-  const [name, setName] = useState("0Fear");
+  
+const [name,setName]=useState("joey")
+  
 
+  return  <div>
+    <Child valueOfProps={name}/>
 
-  return (
-    <div className="App">
-      <Child />
-      <h1>{name}</h1>
-      <button onClick={()=>setName("lul")}>change name</button>
+  <div>
+    sup, my name is {name}
     </div>
-  );
-}
+        <button onClick={()=>{setName("bleh")}}>change name</button>
+        </div>
+
+
+  
+  
+  
+  }

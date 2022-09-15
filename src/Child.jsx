@@ -1,8 +1,8 @@
 import React from "react"
 
-export default function Child(){
+export default function Child({valueOfProps}){
     return <div>
         
-        <h2>Child</h2>
+        <h2>Child {valueOfProps}</h2>
         </div>
 }
