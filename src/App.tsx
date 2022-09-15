@@ -10,12 +10,13 @@ const [name,setName]=useState("joey")
   
 
   return  <div>
+  <button onClick={setName("bleh")}>change name</button>
+
     <Child valueOfProps={name}/>
 
   <div>
     sup, my name is {name}
     </div>
-        <button onClick={()=>{setName("bleh")}}>change name</button>
         </div>
 
 
